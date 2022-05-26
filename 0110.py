@@ -6,5 +6,4 @@ while b < 10:
   e = c+d
   a = a+e
   b += 1
-
 print(a)
