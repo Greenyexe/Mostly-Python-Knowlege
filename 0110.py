@@ -7,5 +7,3 @@ while b < 10:
   a = a+e
   b += 1
 print(a)
-
-# random comment
