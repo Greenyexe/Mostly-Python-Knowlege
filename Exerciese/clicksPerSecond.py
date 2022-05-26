@@ -4,20 +4,23 @@ from tkinter import *
 import time
 
 count = 0
+time = 0
 
 def click():
-  global count
-  count += 1
-  time.sleep(1)
+  if time == 0:
+    global count
+    count += 1
+  else:
+    print("You clicked", count, "times in 1 second!")
 
 window = Tk()
 
 button = Button(window,
-                text="Click me as fast as you can!",
+                text="Click me as fast\nas you can!",
                 command=click,
                 fg="#00FF00",
                 bg="black",
-                font=("Times New Roman", 40))
+                font=("Times New Roman", 60))
 
 button.pack()
 
