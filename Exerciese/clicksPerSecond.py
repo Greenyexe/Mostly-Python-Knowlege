@@ -5,14 +5,12 @@ import time
 
 count = 0
 time = 0
+tEnd = time.time() + 1 *1
 
 def click():
-  if time == 0:
-    global count
+  while time.time() < tEnd:
     count += 1
-  else:
-    print("You clicked", count, "times in 1 second!")
-
+  print("You clicked", count,"times in a second")
 window = Tk()
 
 button = Button(window,
