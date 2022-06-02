@@ -17,3 +17,11 @@ function thing() {
     }
   }
 }
+
+// print 58 * 32
+function print() {
+  var result = 58 * 32;
+  console.log(result);
+}
+
+print();
