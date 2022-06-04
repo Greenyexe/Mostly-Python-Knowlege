@@ -4,6 +4,6 @@ def countVowels(word):
     for i in word:
         if i in vowels:
             counter += 1
-    print(counter)
+    return counter
 
-countVowels("pneumonoultramicroscopicsilicovolcanoconiosis")
+print(countVowels("pneumonoultramicroscopicsilicovolcanoconiosis"))
