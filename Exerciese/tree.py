@@ -1,4 +1,4 @@
-import random
+import random 
 import turtle
 
 wn = turtle.Screen()
@@ -15,7 +15,7 @@ tim.speed(0)
 
 
 
-def my_tree(tree, recursion_number):
+def my_tree(tree, recursion_number): 
     output = ""
     X_1_11random = []
     for i in range(40):
