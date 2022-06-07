@@ -52,4 +52,6 @@ button.pack()
 
 window.mainloop()
 
+#*****************************************************************************************
+
 print("{} clicks in {} seconds".format(len(count), timey))
