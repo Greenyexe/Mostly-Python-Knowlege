@@ -54,4 +54,4 @@ window.mainloop()
 
 #*****************************************************************************************
 
-print("{} clicks in {} seconds".format(len(count), timey))
+print("{} clicks in {} seconds or {} clicks per second".format(len(count), timey, len(count)/timey))
