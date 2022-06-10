@@ -1,7 +1,6 @@
 # just trying to make a clikcs per second program
 
 from tkinter import *
-import time
 
 #*****************************************************************************************
 
