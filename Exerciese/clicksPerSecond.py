@@ -1,7 +1,6 @@
 # just trying to make a clikcs per second program
 
 from tkinter import *
-import time
 
 #*****************************************************************************************
 
@@ -54,4 +53,4 @@ window.mainloop()
 
 #*****************************************************************************************
 
-print("{} clicks in {} seconds or {} clicks per second".format(len(count), timey, len(count)/timey))
+print(f"{len(count)} clicks in {timey} seconds or {len(count)/timey} clicks per second")
