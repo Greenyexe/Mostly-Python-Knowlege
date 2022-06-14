@@ -23,7 +23,7 @@ def click():
 #    print("You clicked yes")
 #  else:
 #    print("You clicked no")
-  answer = messagebox.askyesnocancel(title = "Question", message = "Do you like to code?",icon = "error")
+  answer = messagebox.askyesnocancel(title = "Question", message = "Do you like to code?",icon = "question")
   if answer==True:
     print("You like to code")
   elif answer==False:
