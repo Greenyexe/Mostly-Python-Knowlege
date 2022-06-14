@@ -49,8 +49,6 @@ def load(): #Loading screen
     #print("\033[1m"+ "".join(lLen)+ "\033[0m")#
     print("\n\033[48;2;50;255;75m               \033[1mDONE              \033[0m")    
     timeEnd = time.time() - timeStart #end time
-    with open("output.txt","a") as f: #write to file
-      f.write(str(timeEnd) + '\n') #write to file
     
     time.sleep(3) #wait 3 seconds
           
