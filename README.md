@@ -1,1 +1,1 @@
-This is just some basic python knoledge so if you want to have a look around do so but i am dumb so don't judge
+This is just some basic python knoledge so feel free to have a look around. There may be some uncompleted stuff
