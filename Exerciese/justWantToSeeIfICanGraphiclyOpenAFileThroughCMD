@@ -1,0 +1,14 @@
+from tkinter import filedialog
+
+doTheyWantToOpenAFile = input("Do you want to open a file? (y/n): ")
+
+if doTheyWantToOpenAFile == "y":
+  filePath = filedialog.askopenfilename(initialdir="C:\\Users\\edite\\Desktop",
+                                        title="Open a file",
+                                        filetypes=(("text files", "*.txt"),
+                                        ("All files", "*.*")))
+  file = open(filePath, "r") # r stands for read
+  print(file.read())
+  file.close()
+else:
+  print("You didn't want to open a file.")
