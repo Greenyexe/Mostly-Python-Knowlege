@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter.ttk import *
-import time
 
 def start():
   KB = 16431
@@ -12,6 +11,11 @@ def start():
     percent.set(str(int(download/KB*100))+"%")
     text.set(str(download)+"/"+str(KB)+" KB downloaded")
     window.update_idletasks()
+  Label(window, 
+        text="I just wasted your time", 
+        font=("times new roman",50), 
+        background="red", 
+        foreground="black").pack()
     
 
 window = Tk()
