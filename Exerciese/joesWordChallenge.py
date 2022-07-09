@@ -1,8 +1,7 @@
 import random
 
 words=["apple","banana","cherry","orange","kiwi","lemon","grapes","mango", "peach","pineapple","strawberry", "watermelon", "blueberry", "blackberry", "raspberry"]
-random.shuffle(words)
-word=words[0]
+word=words[random.randint(0,len(words))]
 
 vowels = ["a", "e", "i", "o", "u"]
 line_letters = ["a","e","f","h","i","k","l","m","n","t","v","w","x","y","z"]
