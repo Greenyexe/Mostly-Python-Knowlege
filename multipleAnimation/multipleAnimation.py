@@ -9,7 +9,7 @@ window = Tk()
 WIDTH = 750 
 HEIGHT = 750
 
-canvas = Canvas(window,width=WIDTH,height=HEIGHT)
+canvas = Canvas(window,width=WIDTH,height=HEIGHT,background="black")
 canvas.pack()
 
 volley_ball = Ball(canvas,0,0,100,1,6,"white")
