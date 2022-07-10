@@ -1,3 +1,5 @@
+# Why is this so satisfying?
+
 from tkinter import *
 from ball import *
 import time
