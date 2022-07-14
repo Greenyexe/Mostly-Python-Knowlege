@@ -16,10 +16,16 @@ def equals():
     try:
         equation_text = eval(equation_text)
         equation_label.set(equation_text)
-        total = eval(equation_text)
+        total = eval(str(equation_text))
         equation_label.set(total)
 
         equation_text = total
+
+    except SyntaxError:
+        equation_label.set("Syntax Error")
+
+        equation_text = ""
+
     except ZeroDivisionError:
         equation_label.set("arithmetic error")
 
@@ -27,7 +33,11 @@ def equals():
 
 
 def clear():
-    pass
+    global equation_text
+
+    equation_label.set("")
+
+    equation_text = ""
 
 
 window = Tk()
