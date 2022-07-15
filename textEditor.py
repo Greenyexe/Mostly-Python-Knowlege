@@ -21,8 +21,8 @@ def new_file():
 
 def open_file():
     file = askopenfilename(defaultextension=".txt",
-                       filetypes=[("All Files", "*.*"),
-                                  ("Text Documents", "*.txt")])
+                                            filetypes=[("All Files", "*.*"),
+                                            ("Text Documents", "*.txt")])
 
     if file is None:
         return
@@ -110,7 +110,7 @@ font_name.set("Times New Roman")
 font_size = StringVar(window)
 font_size.set("12")
 
-text_area = Text(window, font=(font_name.get(), font_size.get()))
+text_area = Text(window, font=(font_name.get(), font_size.get()), background="white", foreground="black")
 
 scroll_bar = Scrollbar(text_area)
 window.grid_rowconfigure(0, weight=1)
