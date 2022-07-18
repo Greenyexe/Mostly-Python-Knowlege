@@ -104,17 +104,17 @@ def new_game():
 
 window = Tk()
 window.config(bg="#F0F0F0")
-window.title("Tic Tac Toe")
+window.title("Noughts and crosses")
 players = ["X", "O"]
 player = random.choice(players)
 buttons = [[0, 0, 0],
            [0, 0, 0],
            [0, 0, 0]]
 
-label = Label(text="Player " + player + " turn", font=("consolas", 40))
+label = Label(text="Player " + player + " turn", font=("consolas", 40), bg="#F0F0F0", fg="black")
 label.pack(side=TOP)
 
-reset_button = Button(text="Reset", font=("consolas", 20), command=new_game)
+reset_button = Button(text="Reset", font=("consolas", 20), command=new_game, bg="#F0F0F0", fg="black")
 reset_button.pack(side=TOP)
 
 frame = Frame(window)
@@ -127,7 +127,9 @@ for row in range(3):
                                       font=("consolas", 40),
                                       width=5,
                                       height=2,
-                                      command=lambda row=row, column=column: next_turn(row, column))
+                                      command=lambda row=row, column=column: next_turn(row, column),
+                                      bg="#F0F0F0",
+                                      fg="black")
         buttons[row][column].grid(row=row, column=column)
 
 
